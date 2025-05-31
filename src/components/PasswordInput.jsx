@@ -11,10 +11,18 @@ const PasswordInput = ({ onCheckStrength }) => {
         if (!password) return;
 
         setLoading(true);
-        setError(''); // Reset error message
+        setError('');
 
         try {
-            const response = await axios.post('https://password-checker-api.onrender.com', { password });
+            const response = await axios.post(
+                'https://password-checker-api.onrender.com/api/check-password',
+                { password },
+                {
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                }
+            );
             onCheckStrength(response.data);
         } catch (error) {
             setError('Error checking password strength.');
