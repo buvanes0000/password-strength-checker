@@ -4,13 +4,14 @@ import PasswordInput from './components/PasswordInput';
 import StrengthIndicator from './components/StrengthIndicator';
 import animationData from './assets/password_strength.json'; // <-- Your animation file
 import './App.css';
+import 'animate.css';
 
 const App = () => {
     const [strength, setStrength] = useState(null);
 
     return (
         <div className="container">
-            <h1>Password Strength Checker</h1>
+            <h1 className="animate__animated animate__lightSpeedInLeft">Password Strength Checker</h1>
             <div className="animation-wrapper">
                 <Lottie animationData={animationData} loop={true} />
             </div>

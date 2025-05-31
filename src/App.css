@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Permanent+Marker&display=swap');
 
 
 
@@ -48,6 +48,10 @@ input::placeholder {
   color: #ddd;
   text-align: center;
 }
+.warning {
+  color: #27374D;
+  --animate-duration: 60s;
+}
 
 
 button {
@@ -59,6 +63,18 @@ button {
   cursor: pointer;
   border: none;
 }
+.retry-button {
+    margin-left: 10px;
+    padding: 4px 8px;
+    font-size: 0.8rem;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    color: #006A71;
+}
+
+
+
 .animation-wrapper {
     width: 280px;
     height: 280px;
@@ -76,7 +92,11 @@ button:disabled {
 ul {
   list-style-type: none;
   padding: 0;
+  font-family: "Fugaz One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
 
 li {
   font-size: 16px;
@@ -88,7 +108,7 @@ li {
 }
 
 .weak {
-  color: red;
+  color: #EDF1D6;
 }
 
 .error {
