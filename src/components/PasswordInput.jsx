@@ -35,7 +35,7 @@ const PasswordInput = ({ onCheckStrength }) => {
         }
     };
 
-    const inputClassName = isCommon ? ' animate__animated  animate__hinge animate__delay-1s' : '';
+    const inputClassName = isCommon ? ' animate__animated  animate__hinge' : '';
 
     return (
         <form onSubmit={handleSubmit}>
