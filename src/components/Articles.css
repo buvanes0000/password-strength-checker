@@ -1,0 +1,47 @@
+/* src/components/Articles.css */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+.articles-section {
+  margin: 2rem auto;
+  max-width: 1000px;
+  padding: 1.5rem;
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+p {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.articles-section h2,
+.articles-section h3 {
+  color: #2d2d2d;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.articles-section p,
+.articles-section ul {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.articles-section ul {
+  padding-left: 1.2rem;
+}
+
+.articles-section li {
+  margin-bottom: 0.5rem;
+}
+
+.article-image {
+  width: 100%;
+  max-width: 500px;
+  margin: 1rem auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
